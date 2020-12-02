@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "Libre-Baskerville";
+  src: url("./fonts/LibreBaskerville-Bold.woff2") format("woff2"), url("./fonts/LibreBaskerville-Bold.woff") format("woff"), url("./fonts/LibreBaskerville-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Libre-Baskerville";
+  src: url("./fonts/LibreBaskerville-Regular.woff2") format("woff2"), url("./fonts/LibreBaskerville-Regular.woff") format("woff"), url("./fonts/LibreBaskerville-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.yellow {
+  color: #feb960;
+}
+
+.green {
+  color: #38c695;
+}
+
+.purpure {
+  color: #b27cf5;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 25px 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+}
+
+.header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .wrapper .logo {
+  max-width: 97px;
+}
+
+.header .wrapper .nav a {
+  font-size: 14px;
+  color: #272727;
+  margin-left: 25px;
+}
+
+.hero {
+  position: relative;
+  padding: 175px 15px;
+  background-image: url("https://www.vrfitnessinsider.com/wp-content/uploads/2017/09/developer-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero .hero-title {
+  font-size: 60px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-family: "Libre-Baskerville";
+  font-weight: 400;
+  line-height: 85px;
+  margin-bottom: 50px;
+}
+
+.hero .hero-button {
+  cursor: pointer;
+  padding: 20px 40px;
+  background-color: #fc5f45;
+  border-radius: 35px;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.hero .hero-boxes {
+  width: 743px;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.hero .box img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 35px;
+}
+
+.hero .box p {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 150px 15px;
+}
+
+.about .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .row .photo {
+  width: 555px;
+  height: 700px;
+}
+
+.about .row .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .row .info {
+  position: relative;
+  margin-left: -70px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 95px 80px;
+  background-color: #fff;
+}
+
+.about .row .info .title {
+  position: relative;
+  color: #313131;
+  font-size: 50px;
+  margin-bottom: 37px;
+  font-family: "Libre-Baskerville";
+  font-weight: 600;
+}
+
+.about .row .info .text {
+  position: relative;
+  font-size: 15px;
+  line-height: 27px;
+  color: #616161;
+  margin-bottom: 40px;
+}
+
+.about .row .info .text:last-child {
+  margin-bottom: 0;
+}
+
+.about .row .info .number {
+  position: absolute;
+  left: -5px;
+  top: -20px;
+  z-index: 0;
+  font-size: 274px;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  opacity: 0.3;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
